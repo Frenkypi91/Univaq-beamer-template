@@ -1,0 +1,76 @@
+\documentclass[hyperref={bookmarks=false}]{beamer}
+\usepackage{amsmath,amsfonts}
+\usetheme{univaq}
+
+% Serif math improves readability in slides
+\usefonttheme[onlymath]{serif}
+
+% --- Title slide background ---
+% Full screen:
+% \titlebackground{assets/background}
+% Split-right (recommended):
+\titlebackground*{assets/background}
+
+% --- Metadata ---
+\title{UnivAQ Beamer Theme (Improved)}
+\subtitle{Template for Academic Presentations}
+\course{Ph.D. Course in Business and Legal Sciences}
+\author{Francesco Picarazzi}
+\IDnumber{302956}
+\date{Academic Year 2025--2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Objective}
+\begin{itemize}
+  \item Consistent style across all slides (logo, titles, blocks)
+  \item Title slide with UnivAQ background
+  \item Convenient environments: \texttt{chapter}, \texttt{sidepic}, \texttt{colorblock}
+\end{itemize}
+\end{frame}
+
+\section{Structure}
+
+\begin{frame}{Lists and Equations}
+\framesubtitle{Beamer + \LaTeX}
+\begin{itemize}[<+->]
+  \item Progressive lists
+  \item Clean mathematical typesetting:
+    \[
+      y = A x \quad\Rightarrow\quad x = (I-A)^{-1} y
+    \]
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Blocks}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Standard block}
+Block text.\\
+Uses the theme color palette.
+\end{block}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{colorblock}[black]{univaqgrey}{Color block}
+Customizable color block.
+\end{colorblock}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{chapter}[assets/background_alternative]{maincolor}{New Section}
+This is a \textbf{chapter slide}, useful for introducing a new section.
+\end{chapter}
+
+\begin{sidepic}{assets/background_alternative}{Slide with Side Image}
+\begin{itemize}
+  \item Content on the left
+  \item Full-height image on the right
+\end{itemize}
+\end{sidepic}
+
+\backmatter
+
+\end{document}
