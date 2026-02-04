@@ -73,7 +73,7 @@ The theme relies on standard packages typically included in Beamer installations
 Compile the example presentation:
 
 ```bash
-pdflatex univaq.tex
+pdflatex -pdf -f univaq.tex
 ```
 
 (For best results, run the command twice.)
