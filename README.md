@@ -1,4 +1,4 @@
-Univaq Beamer Presentation Template
+# Univaq Beamer Presentation Template
 
 An **unofficial LaTeX Beamer template** inspired by the visual identity of the University of L’Aquila (UnivAQ), designed for academic presentations such as Ph.D. courses, seminars, workshops, and conferences.
 
